@@ -52,12 +52,7 @@ public class Launchpad {
 		            Instrument[] instruments = synth.getDefaultSoundbank().getInstruments();
 		            synth.loadInstrument(instruments[0]);
 		        }
-				
-				
-				
-				
-				
-				
+
 				printSynthInfo(synth);
 				System.out.println("synth set");
 			} catch (MidiUnavailableException e) {
@@ -250,15 +245,7 @@ public class Launchpad {
 		}
 			
 	}
-	
-	public void printGrid() {
-		for (int i = 0; i < grid.length; i++) {
-			for (int j = 0; j < grid[i].length; j++) {
-				System.out.print(grid[i][j]+"\t");
-			}
-			System.out.println();
-		}		
-	}
+
 	
 	private boolean findReciever() {
 		MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
